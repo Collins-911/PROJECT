@@ -1,0 +1,77 @@
+.snake-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Smooth buttons */
+.start-btn,
+.game-over button {
+  padding: 10px 20px;
+  background-color: rgba(30, 30, 47, 0.7);
+  width: 400px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-btn:hover,
+.game-over button:hover {
+  background-color: white;
+  color: rgba(30, 30, 47, 0.7);
+  transition: 0.5s;
+}
+
+
+.snake-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px); 
+  grid-template-rows: repeat(10, 30px);
+  background-color: #001f3f;
+  box-shadow: 0 0 15px #000;
+  border: 2px solid #222;
+  border-radius: 10px;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.snake-board div {
+  width: 30px;
+  height: 30px;
+  background-color: #0074D9;
+  border-radius: 4px;
+}
+
+
+.game-over {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-over h2 {
+  color: red;
+  margin-bottom: 10px;
+}

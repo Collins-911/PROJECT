@@ -1,0 +1,80 @@
+.purchasedContainer {
+  padding: 40px 20px;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  background-color: rgba(30, 30, 47, 0.7);
+  overflow-y: auto;
+  max-height: 600px;
+  border-radius: 25px;
+}
+.purchasedContainer::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+.purchasedContainer::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.purchasedContainer::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgba(30, 30, 47, 0.7);
+}
+
+
+.purchasedContainerflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.purchasedItem {
+  width: 260px;
+  height: 360px;
+  background-color: #1e1e2f;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.purchasedItem:hover {
+  transform: scale(1.05);
+  background-color: #292949;
+}
+
+.purchasedImage {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.play {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(30, 30, 47, 0.7);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 1px solid white;
+}
+
+.play:hover {
+  background-color: white;
+  color: rgba(30, 30, 47, 0.7);
+}

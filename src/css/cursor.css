@@ -1,0 +1,13 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  background: url('/cursor.png') center center no-repeat;
+  background-size: contain;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+}

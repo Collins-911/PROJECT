@@ -1,0 +1,134 @@
+.friendsContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+  height: 80vh;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 12px;
+  color: white;
+  margin-top: 20px;
+  background-color: rgba(30, 30, 47, 0.7);
+}
+
+.friendsList {
+  background-color: #1f1f1f;
+  width: 35%;
+  border-radius: 12px;
+  padding: 15px;
+  max-height: 600px; /* LIMIT HEIGHT */
+  overflow-y: auto;   /* ENABLE SCROLLING */
+}
+
+
+.friendsList h2 {
+  margin-bottom: 15px;
+  color: #00ffd1;
+}
+
+.friendsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friendsList li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.friendsList li:hover {
+  background-color: #3a3a3a;
+}
+
+/* .avatar {
+  width: 40px;
+  height: 40px;
+  background: #888;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 20px;
+} */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-weight: bold;
+ 
+}
+
+.status {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.status.online {
+  color: #4caf50;
+}
+
+.status.offline {
+  color: #f44336;
+}
+
+/* Chat Section */
+.chat {
+  background-color: #2a2a2a;
+  width: 65%;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat h2 {
+  margin-bottom: 10px;
+  color: #00ffd1;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+.chatMessages p {
+  margin-bottom: 10px;
+}
+
+.chatInput {
+  display: flex;
+  gap: 10px;
+}
+
+.chatInput input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.chatInput button {
+  padding: 10px 20px;
+  background-color: #00ffd1;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chatInput button:hover {
+  background-color: #00bba1;
+}
