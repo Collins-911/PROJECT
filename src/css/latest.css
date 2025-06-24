@@ -344,36 +344,139 @@
     height: 200px;
   }
 }
+/* Add these to your existing CSS */
 
+/* For very small screens (under 400px) */
 @media (max-width: 400px) {
-  .latest img {
-    height: 300px;
-  }
-  .latest {
-    min-height: 300px;
-  }
-  .latestInner {
+  .section {
+    flex-direction: column;
     padding: 10px;
+    margin-top: 20px;
   }
+  
+  .latest {
+    min-height: 250px;
+    width: 100%;
+  }
+  
+  .latest img {
+    height: 250px;
+  }
+  
+  .latestInner {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .latestInner h2 {
+    font-size: 18px;
+  }
+  
+  .latestInner p {
+    font-size: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to 4 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .book-now {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+  
   .nav-buttons {
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
   }
+  
   .left-btn,
   .right-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .music-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin: 15px auto 10px auto;
+  }
+  
+  .controls {
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .btn {
     width: 35px;
     height: 35px;
+    font-size: 1rem;
   }
-  .avatar {
-    width: 60px;
-    height: 60px;
-    margin: 20px auto 15px auto;
+  
+  .caresoul {
+    height: 180px;
+    border-radius: 15px;
+    margin: 10px auto;
   }
-  .controls {
-    gap: 15px;
+  
+  .carousel-item {
+    padding: 10px;
   }
-  .btn {
-    width: 40px;
-    height: 40px;
+  
+  .carousel-item h3 {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .carousel-item p {
+    font-size: 12px;
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* For extremely small screens (under 320px) */
+@media (max-width: 320px) {
+  .latestInner p {
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+  }
+  
+  .carousel-item p {
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+  }
+  
+  .latestInner h2 {
+    font-size: 16px;
+  }
+  
+  .carousel-item h3 {
+    font-size: 14px;
   }
 }
