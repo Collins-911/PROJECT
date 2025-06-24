@@ -1,7 +1,7 @@
 import '../css/sidebar.css';
 import { AiFillDashboard, AiOutlineUsergroupAdd, AiOutlineShoppingCart } from 'react-icons/ai';
 import { FaGamepad, FaBell, FaMoneyCheckAlt } from 'react-icons/fa';
-import Navigation from './navigation';
+import Navigation from '../components/Navigation';
 
 export default function Sidebar() {
 
