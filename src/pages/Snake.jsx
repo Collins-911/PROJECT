@@ -1,11 +1,11 @@
 import { useEffect, useState, useRef } from "react";
-import Cursor from "../components/Cursor";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Top from "../components/Top";
 import "../css/snake.css";
 
 const GRID_SIZE = 20;
-const INITIAL_SNAKE = [{ x: 10, y: 10 }];
+const CELL_SIZE = 20;
+const INITIAL_SNAKE = [{ x: 1, y: 10 }];
 const INITIAL_DIRECTION = { x: 0, y: -1 };
 
 function generateFood(snake) {
@@ -35,7 +35,7 @@ export default function Snake() {
           break;
         case "ArrowDown":
           setDirection({ x: 0, y: 1 });
-          break;
+          break; 
         case "ArrowLeft":
           setDirection({ x: -1, y: 0 });
           break;
@@ -64,7 +64,7 @@ export default function Snake() {
       x: snake[0].x + direction.x,
       y: snake[0].y + direction.y,
     };
-
+yty
     if (
       newHead.x < 0 ||
       newHead.y < 0 ||
@@ -98,9 +98,7 @@ export default function Snake() {
 
   return (
     <div className="home-container">
-      <div className="custom-cursor">
-        <Cursor />
-      </div>
+    
 
       <div className="sidebar-container">
         <Sidebar />
@@ -112,15 +110,26 @@ export default function Snake() {
         <div className="snake-wrapper">
           <h1>Snake Game</h1>
 
+          
+          {gameOver && (
+            <div className="game-over-message">
+              <h2>Game Over</h2>
+            </div>
+          )}
+
+          
           {started && (
             <div
               className="snake-board"
               style={{
                 display: "grid",
-                gridTemplateColumns: `repeat(${GRID_SIZE}, 20px)`,
-                gridTemplateRows: `repeat(${GRID_SIZE}, 20px)`,
+                gridTemplateColumns: `repeat(${GRID_SIZE}, ${CELL_SIZE}px)`,
+                gridTemplateRows: `repeat(${GRID_SIZE}, ${CELL_SIZE}px)`,
                 gap: "1px",
                 marginBottom: "20px",
+                backgroundColor: "rgba(30, 30, 47, 0.7)",
+                border: "2px solid #222",
+                borderRadius: "10px",
               }}
             >
               {[...Array(GRID_SIZE * GRID_SIZE)].map((_, i) => {
@@ -132,13 +141,14 @@ export default function Snake() {
                   <div
                     key={i}
                     style={{
-                      width: "20px",
-                      height: "20px",
+                      width: `${CELL_SIZE}px`,
+                      height: `${CELL_SIZE}px`,
                       backgroundColor: isSnake
                         ? "green"
                         : isFood
                         ? "red"
                         : "black",
+                      borderRadius: "4px",
                     }}
                   ></div>
                 );
@@ -146,18 +156,17 @@ export default function Snake() {
             </div>
           )}
 
-          {/* Start/Restart Button BELOW the grid */}
-          {!started && (
+        
+          {!started ? (
             <button className="start-btn" onClick={startGame}>
               Start Game
             </button>
-          )}
-
-          {gameOver && (
-            <div className="game-over">
-              <h2>Game Over</h2>
-              <button onClick={startGame}>Restart</button>
-            </div>
+          ) : (
+            gameOver && (
+              <button className="start-btn" onClick={startGame}>
+                Restart
+              </button>
+            )
           )}
         </div>
       </div>

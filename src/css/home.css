@@ -7,17 +7,16 @@
   border: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: none !important;
   overflow: hidden;
 }
 .home-container {
   width: 100%;
-  min-height: 100vh; /* ensures it fills entire height */
+  min-height: 100vh; 
   background-color: rgba(30, 30, 47, 0.7);
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
   display: flex;
   flex-direction: row;
-  position: relative; /* changed from fixed to relative */
+  position: relative;
   overflow-y: hidden;
 }
 

@@ -138,7 +138,7 @@ export default function Latest() {
         </div>
       </div>
 
-      {/* 🟡 News Carousel Section */}
+    
       <div
         className="caresoul"
         onMouseEnter={stopAutoScroll}

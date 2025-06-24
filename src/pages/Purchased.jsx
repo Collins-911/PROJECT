@@ -1,8 +1,7 @@
-import Cursor from '../components/Cursor';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 import Top from '../components/Top';
 import '../css/purchased.css';
-import Navigation from '../components/navigation';
+import Navigation from '../components/Navigation';
 
 export default function Purchased() {
 
@@ -32,9 +31,7 @@ export default function Purchased() {
 
   return (
     <>
-      <div className="custom-cursor">
-        <Cursor />
-      </div>
+      
       <div className="home-container">
         <div className="sidebar-container">
           <Sidebar />

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Cursor from "../components/Cursor";
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 import '../css/typingGame.css';
 import Top from '../components/Top';
 
@@ -54,9 +53,7 @@ export default function Typing_game() {
 
   return (
     <>
-      <div className="custom-cursor">
-        <Cursor />
-      </div>
+      
       <div className="home-container">
         <div className="sidebar-container">
           <Sidebar />

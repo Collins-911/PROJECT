@@ -1,5 +1,4 @@
-import Cursor from '../components/Cursor';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 import Top from '../components/Top';
 import { useState } from 'react';
 import '../css/tic-tac-toe.css';
@@ -38,9 +37,7 @@ export default function Tic() {
 
   return (
     <>
-      <div className="custom-cursor">
-        <Cursor />
-      </div>
+     
       <div className="home-container">
         <div className="sidebar-container">
           <Sidebar />
