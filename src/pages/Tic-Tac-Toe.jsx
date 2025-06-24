@@ -1,4 +1,4 @@
-import Sidebar from '../components/sidebar';
+import Sidebar from '../components/Sidebar';
 import Top from '../components/Top';
 import { useState } from 'react';
 import '../css/tic-tac-toe.css';

@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import Sidebar from "../components/sidebar";
+import Sidebar from "../components/Sidebar";
 import Top from "../components/Top";
 import "../css/snake.css";
 

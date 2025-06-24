@@ -1,5 +1,5 @@
 import '../css/home.css';
-import Sidebar from '../components/sidebar.jsx';
+import Sidebar from '../components/Sidebar.jsx';
 import Top from '../components/Top.jsx';
 import Game from '../components/Games.jsx';
 

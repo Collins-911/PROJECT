@@ -168,8 +168,6 @@
   transition: 0.5s;
 }
 
-/* ================= Scrollbar Custom Styling ================== */
-
 .friendsList::-webkit-scrollbar,
 .chatMessages::-webkit-scrollbar {
   width: 8px;
