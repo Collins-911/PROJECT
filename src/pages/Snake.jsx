@@ -64,7 +64,7 @@ export default function Snake() {
       x: snake[0].x + direction.x,
       y: snake[0].y + direction.y,
     };
-yty
+
     if (
       newHead.x < 0 ||
       newHead.y < 0 ||

@@ -8,7 +8,6 @@ import Home from './components/Home.jsx';
 import GameList from './pages/Gamelist.jsx';
 import Purchased from './pages/Purchased.jsx';
 import Freinds from './pages/Friends.jsx';
-import SnakeGame from './components/snakeGame.jsx';
 import Typing_game from './pages/Typing_game.jsx';
 import Tic from './pages/Tic-Tac-Toe.jsx'
 import Snake from './pages/Snake.jsx';
@@ -21,7 +20,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/gameList" element={<GameList />} />
         <Route path="/purchased" element={<Purchased />} />
         <Route path="/friends" element={<Freinds />} />
-        <Route path="/snakeGame" element={<SnakeGame />} />
         <Route path="/typing_game" element={<Typing_game />} />
         <Route path="/tic-tac-toe" element={<Tic />} />
         <Route path="/snake" element={<Snake />} />

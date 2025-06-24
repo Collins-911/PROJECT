@@ -1,7 +1,7 @@
 import Sidebar from '../components/Sidebar';
 import Top from '../components/Top';
 import '../css/purchased.css';
-import Navigation from '../components/Navigation'
+import Navigation from '../components/navigation';
 
 export default function Purchased() {
 
